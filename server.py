@@ -10,7 +10,7 @@ class Server:
     def run(self):
         sock = socket.socket()
         sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        sock.bind(('', 8081))
+        sock.bind(('', 80))
 
         sock.listen(1)
 
